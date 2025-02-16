@@ -13,8 +13,12 @@ Este projeto em **Python** automatiza o envio de mensagens de aniversário via *
    - Abre uma aba no **Google Chrome** com o link do **WhatsApp Web**  
    - Insere uma mensagem personalizada automaticamente  
    - Envia a mensagem 🎊  
+4. Caso haja algum erro, será capturado no arquivo **erros.csv**, contendo:  
+   - Nome  
+   - Número de telefone  
+   - Erro encontrado ao tentar entrar em contato  
 
-O processo se repete até que todos os aniversariantes sejam notificados.  
+O processo se repete até que todos os aniversariantes sejam notificados, com erros registrados no arquivo para acompanhamento.  
 
 ## 🚀 Possíveis Aplicações  
 
