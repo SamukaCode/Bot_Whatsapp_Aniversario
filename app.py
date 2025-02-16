@@ -30,17 +30,17 @@ for linha in pagina_membros.iter_rows(min_row=2):
             try:
                 link_mensagem_whatsapp = f"https://web.whatsapp.com/send?phone={telefone}&text={quote(mensagem)}"
                 webbrowser.open(link_mensagem_whatsapp)
-                time.sleep(6)
+                time.sleep(10)
                 # Tenta localizar a seta do WhatsApp
                 seta = pyautogui.locateCenterOnScreen('seta.png', confidence=0.7)
                 
                 #Caso encontre a seta, irá realizar o clique e após isso fechar a guia do navegador
                 if seta is not None:
-                    time.sleep(3)
+                    time.sleep(5)
                     pyautogui.click(seta[0],seta[1])
-                    time.sleep(3)
+                    time.sleep(5)
                     pyautogui.hotkey('ctrl', 'w')
-                    time.sleep(3)
+                    time.sleep(5)
                 else:
                     print(f"Seta do WhatsApp não encontrada para {nome}. Verifique o print de tela.")
 
